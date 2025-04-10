@@ -38,7 +38,7 @@ This project leverages **AI-powered facial recognition**, **IoT devices**, and *
 
 ![image](https://github.com/user-attachments/assets/42f10331-0e75-496b-962d-98b739b3aab6)
 
-📊 ## Work FLow
+## 📊 Work FLow
 
 ![image](https://github.com/user-attachments/assets/a74210c4-3836-4a03-9c78-e2ae8cfedc5a)
 
