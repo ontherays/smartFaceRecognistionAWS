@@ -13,7 +13,7 @@ This project leverages **AI-powered facial recognition**, **IoT devices**, and *
 - 👥 Automatic headcount of people in a room
 - ☁️ AWS Rekognition for secure and scalable identity matching
 - 📊 Web dashboard to view attendance logs and analytics
-- 📷 Live video/image capture from Raspberry Pi or Jetson Nano
+- 📷 Live video/image capture from Raspberry Pi
 - 🔔 Alerts for unknown or unauthorized individuals
 
 ---
