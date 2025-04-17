@@ -57,10 +57,10 @@ The **Raspberry Pi 4 Model B** is a powerful, compact, and affordable single-boa
    - **Note-**I used Wifi connection After Booting
   
 6 . Flash your desired OS (e.g., Raspberry Pi OS) onto a microSD card using a tool like Raspberry Pi Imager.
-   - Install (SD card formator)[https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-windows-download/]
+   - Install [SD card formator](https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-windows-download/)
    - Choose SD card drive carefully.
    - Formate.
-   - Goto (Raspberry Pi OS)[https://www.raspberrypi.com/software/].
+   - Goto [Raspberry Pi OS](https://www.raspberrypi.com/software/).
    - Install Raspberry Pi Imager for Windows
      <img width="860" alt="image" src="https://github.com/user-attachments/assets/ec332bb6-1268-4d28-9b0d-12b5adc9ad6e" />
    - Open and Choose Device, OS and Storage as per requirements.
