@@ -47,6 +47,6 @@ This project leverages **AI-powered facial recognition**, **IoT devices**, and *
 | -------------------- | ----------- | ---------------------------------------- |
 | Ravi Shankar Prasad  |  M11202816  |  Software, AWS integration, presentation |
 |      Aamir Ali       |  M11202822  |       Hardware procurements/setup        |
-|  Hazilky Muna Putra  |  M11302825  |             Github, report               |
+|  Hazilky Muna Putra  |  M11302811  |             Github, report               |
 |      Jalu Veda       |  M11302824  |        Software, web dashboard           |
 
