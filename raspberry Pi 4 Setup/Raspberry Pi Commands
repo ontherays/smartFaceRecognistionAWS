@@ -1,0 +1,8 @@
+### Check Camera Specifications
+$ rpicam-hello --list-camera
+
+### Take a picture
+$ rpicam-still -o /<foldername>/<filename>.jpg
+
+### Take A video
+$ rpicam-vid -o /<foldername>/<filename>.mp4
