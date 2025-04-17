@@ -40,7 +40,7 @@ The **Raspberry Pi 4 Model B** is a powerful, compact, and affordable single-boa
 1. **Connect USB Keyboard and Mouse**  
    - Plug the **USB keyboard** and **mouse** into the **USB 2.0 or USB 3.0 ports** (blue ports are USB 3.0).
 
-2. **Connect the Camera (Optional)**  
+2. **Connect the Camera**  
    - Locate the **camera serial interface (CSI) port** near the HDMI ports.  
    - Gently **lift the plastic clip**, insert the **ribbon cable** from the camera (metal contacts facing the HDMI ports), and press the clip back to secure it.
 
@@ -54,6 +54,7 @@ The **Raspberry Pi 4 Model B** is a powerful, compact, and affordable single-boa
 
 5. **Optional: Connect to Ethernet (Wired Network)**  
    - Plug in an **Ethernet cable** to the **Gigabit Ethernet port** for wired internet access, or use Wi-Fi after booting.
+   - **Note-**I used Wifi connection After Booting
   
 6 . Flash your desired OS (e.g., Raspberry Pi OS) onto a microSD card using a tool like Raspberry Pi Imager.
    - Install (SD card formator)[https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-windows-download/]
@@ -67,6 +68,11 @@ The **Raspberry Pi 4 Model B** is a powerful, compact, and affordable single-boa
      - Device - Version of your Raspberry Pi (As PI 4)
      - OS - Compitable with your Device( Raspberry Pi OS(64 bits))
      - Storage - SD card.
+     - Click Next > Edit Setting
+     - Addition Setting, Choose Hostname, Username, Password, Wifi Seetings and Region.
+     - Click Save
+     - <img width="538" alt="image" src="https://github.com/user-attachments/assets/a400d5cf-58fc-4eb5-a75b-64e2d14754f6" />
+
    - Flash.
    - Once Donce, Put the SD card in Raspberry Pi module.
 
