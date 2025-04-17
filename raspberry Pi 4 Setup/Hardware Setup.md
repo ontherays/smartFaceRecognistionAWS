@@ -34,9 +34,6 @@ The **Raspberry Pi 4 Model B** is a powerful, compact, and affordable single-boa
 - 5G/Edge computing experiments (great for testbeds)
 
 ---
-Sure! Here are the **step-by-step instructions** for the **hardware setup of a Raspberry Pi 4**, including connecting a **keyboard, mouse, camera, power cable, HDMI, and more**:
-
----
 
 ### 🔌 **Hardware Setup Steps for Raspberry Pi 4**
 
