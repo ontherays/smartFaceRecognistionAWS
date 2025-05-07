@@ -1,7 +1,5 @@
 The dashboard is made using React hosted on AWS Amplify. At the moment, the dashboard website is static and does not currently interact with AWS' DynamoDB
 
-![Screenshot 2025-05-07 151801](https://github.com/user-attachments/assets/166ca9c6-9d37-42c2-8562-a775d3090aa0)
-
 
 ![Screenshot 2025-05-07 185901](https://github.com/user-attachments/assets/aba7d886-3ca1-4986-a9ea-d1e689f80969)
 
