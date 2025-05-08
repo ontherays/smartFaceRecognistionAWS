@@ -3,6 +3,10 @@ Dashboard URL: [main.d18ccseljr9vyz.amplifyapp.com](https://main.d18ccseljr9vyz.
 The dashboard is made using React hosted on AWS Amplify. At the moment, the dashboard website is static, does not currently interact with AWS' DynamoDB, and not mobile-friendly.
 
 
+The dashboard has a total of five different menus, as seen in the blue sidebar.
+
+
+Dashboard contains is the main menu of the attendance system. At the top, it shows total students, students present today, and students absent today. In addition, an attendance chart is shown to inform attendance in the past week. Recent attendance shows the latest attendances by students. At the very bottom of this menu, alert is shown to givve information if some unknown faces are detected on the system.
 ![Screenshot 2025-05-07 185901](https://github.com/user-attachments/assets/aba7d886-3ca1-4986-a9ea-d1e689f80969)
 
 
