@@ -1,4 +1,6 @@
-The dashboard is made using React hosted on AWS Amplify. At the moment, the dashboard website is static and does not currently interact with AWS' DynamoDB
+Dashboard URL: [main.d18ccseljr9vyz.amplifyapp.com](https://main.d18ccseljr9vyz.amplifyapp.com/)
+
+The dashboard is made using React hosted on AWS Amplify. At the moment, the dashboard website is static, does not currently interact with AWS' DynamoDB, and not mobile-friendly.
 
 
 ![Screenshot 2025-05-07 185901](https://github.com/user-attachments/assets/aba7d886-3ca1-4986-a9ea-d1e689f80969)
