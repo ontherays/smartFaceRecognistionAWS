@@ -7,6 +7,7 @@ This project leverages **AI-powered facial recognition**, **IoT devices**, and *
 
 ## Webpage
 [smart-attends.netlify.app](https://smart-attends.netlify.app/)
+The repo for the webpage is available here: https://github.com/19Jal/smart-attend-app
 
 ---
 
