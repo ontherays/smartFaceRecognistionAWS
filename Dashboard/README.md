@@ -15,3 +15,5 @@ Dashboard is the main menu of the attendance system. At the top, it shows total 
 
 
 ![Screenshot 2025-05-07 185944](https://github.com/user-attachments/assets/4c0c66aa-61b6-4e39-985b-248ba2bb524b)
+
+The repo for this dashboard is available here: https://github.com/19Jal/attendance-amplify-app
