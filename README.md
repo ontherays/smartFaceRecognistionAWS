@@ -47,8 +47,23 @@ The repo for the webpage is available here: https://github.com/19Jal/smart-atten
 
 ![image](https://github.com/user-attachments/assets/a74210c4-3836-4a03-9c78-e2ae8cfedc5a)
 
+## Workflow OverviewRaspberry Pi captures an image when someone arrives.
+
+1- Image is uploaded to Amazon S3.
+
+2- Upload triggers a Lambda function.
+
+3- Lambda performs SearchFacesByImage in Rekognition collection.
+
+4- If face is recognized, it looks up name and ID from DynamoDB.
+
+5- Lambda then writes an attendance record (FaceID, Name, Timestamp) to a separate Attendance Table.
+
+6- Prevents duplicate entries per day using conditional checks.
+
 ## System Architecture
 ![FaceRecognitionSystemArchitecture](https://github.com/user-attachments/assets/3616f61b-c88a-4ca0-9694-e39bba51b30c)
+
 
 
 ## Team Responsibilities
