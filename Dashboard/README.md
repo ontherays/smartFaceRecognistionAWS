@@ -2,7 +2,7 @@ The repo for this dashboard is available here: https://github.com/19Jal/attendan
 
 Dashboard URL: [main.d18ccseljr9vyz.amplifyapp.com](https://main.d18ccseljr9vyz.amplifyapp.com/)
 
-The dashboard is made using React hosted on AWS Amplify. At the moment, the dashboard website is static, does not currently interact with AWS' DynamoDB, and not mobile-friendly.
+The dashboard is made using React hosted on AWS Amplify. At the moment, the dashboard does not interact with AWS' DynamoDB.
 
 
 The dashboard has a total of five different menus, as seen in the blue sidebar.
