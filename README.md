@@ -5,7 +5,7 @@ Repository for Smart Attendance System using Face Recognition.
 
 This project leverages **AI-powered facial recognition**, **IoT devices**, and **AWS cloud services** to automate attendance tracking in classrooms, offices, or smart spaces. It can **identify individuals**, **count people present**, and display **real-time analytics** on a dashboard.
 
-# Webpage
+# 🌐 Webpage
 [smart-attends.netlify.app](https://smart-attends.netlify.app/)
 
 The repo for the webpage is available here: https://github.com/19Jal/smart-attend-app
