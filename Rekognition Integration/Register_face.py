@@ -14,7 +14,7 @@ dynamodb = boto3.resource('dynamodb')
 BUCKET_NAME = 'faceappntust'
 COLLECTION_ID = 'StudentFaceCollection'
 DYNAMODB_TABLE = 'FaceIndex'
-LOCAL_FOLDER = os.path.expanduser('/home/user/FaceApp/Pictures')
+LOCAL_FOLDER = os.path.expanduser('/home/user/FaceApp/Pictures/RegistrationImages')
 os.makedirs(LOCAL_FOLDER, exist_ok=True)
 
 # Get user input
@@ -28,11 +28,14 @@ image_path = os.path.join(LOCAL_FOLDER, image_filename)
 s3_key = f"registered/{image_filename}"
 
 # Capture image
+print("Taking Picture, Smile Please! :)")
+sleep(2)
+
 print("Capturing image...")
 camera = Picamera2()
 camera.configure(camera.create_still_configuration())
 camera.start()
-sleep(2)
+sleep(2)  # Allow camera to warm up
 camera.capture_file(image_path)
 camera.stop()
 print(f"Image saved at {image_path}")
@@ -53,21 +56,22 @@ response = rekognition.index_faces(
 
 # Extract FaceId
 if not response['FaceRecords']:
-    print("No face detected. Registration failed.")
+    print("❌ No face detected. Registration failed.")
     exit(1)
 
 face_id = response['FaceRecords'][0]['Face']['FaceId']
-print(f"Face indexed. FaceId: {face_id}")
+print(f"✅ Face indexed. FaceId: {face_id}")
 
 # Store metadata in DynamoDB
 print("Storing metadata in DynamoDB...")
 table = dynamodb.Table(DYNAMODB_TABLE)
 table.put_item(
     Item={
-        'FaceId': face_id,
         'StudentID': student_id,
+        'FaceID': face_id,
         'Name': name,
-        'ImageId': image_filename
+        'ImageID': image_filename
     }
 )
-print("Registration complete and stored in DynamoDB.")
+print("✅ Registration complete and stored in DynamoDB.")
+
