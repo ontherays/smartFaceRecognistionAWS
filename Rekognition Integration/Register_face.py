@@ -56,11 +56,11 @@ response = rekognition.index_faces(
 
 # Extract FaceId
 if not response['FaceRecords']:
-    print("❌ No face detected. Registration failed.")
+    print("No face detected. Registration failed.")
     exit(1)
 
 face_id = response['FaceRecords'][0]['Face']['FaceId']
-print(f"✅ Face indexed. FaceId: {face_id}")
+print(f"Face indexed. FaceId: {face_id}")
 
 # Store metadata in DynamoDB
 print("Storing metadata in DynamoDB...")
@@ -73,5 +73,5 @@ table.put_item(
         'ImageID': image_filename
     }
 )
-print("✅ Registration complete and stored in DynamoDB.")
+print("Registration complete and stored in DynamoDB.")
 
