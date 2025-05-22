@@ -29,15 +29,22 @@ def capture_and_upload():
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     image_name = f"capture_{timestamp}.jpg"
     local_path = os.path.join(LOCAL_FOLDER, image_name)
+
+    # Create dated directory locally
+    dated_local_folder = os.path.join(BASE_LOCAL_FOLDER, date_folder)
+    os.makedirs(dated_local_folder, exist_ok=True)
+    
+    local_path = os.path.join(dated_local_folder, image_name)
+    s3_key = f"{date_folder}/{image_name}"  # S3 path includes the date folder
     
     camera.capture_file(local_path)
     print(f"Image captured: {local_path}")
     
     try:
         s3.upload_file(local_path, bucket_name, image_name)
-        print(f"✅ Image uploaded to S3: {image_name}")
+        print(f"Image uploaded to S3: {image_name}")
     except Exception as e:
-        print(f"❌ Upload failed: {e}")
+        print(f"Upload failed: {e}")
 
 print("Monitoring for motion...")
 
@@ -48,12 +55,12 @@ try:
         # Reverse logic: detect motion when input goes LOW (0)
         if GPIO.input(SENSOR_PIN) == 0:
             if not motion_detected:
-                print("⚠️ Motion detected! Capturing image...")
+                print("Motion detected! Capturing image...")
                 capture_and_upload()
                 motion_detected = True
         else:
             if motion_detected:
-                print("✅ Motion ended. Ready for next detection.")
+                print("Motion ended. Ready for next detection.")
             motion_detected = False
 
         time.sleep(1)  # Polling interval (shorter is more responsive)
