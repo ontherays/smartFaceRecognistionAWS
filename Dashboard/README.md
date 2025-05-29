@@ -1,6 +1,6 @@
 The repo for this dashboard is available here: https://github.com/19Jal/attendance-amplify-app
 
-Dashboard URL: [https://main.d1k310wq4f63hh.amplifyapp.com/](https://main.d5l0x3luaudb1.amplifyapp.com/)
+Dashboard URL: https://main.d5l0x3luaudb1.amplifyapp.com/
 
 The dashboard is made using React hosted on AWS Amplify
 
