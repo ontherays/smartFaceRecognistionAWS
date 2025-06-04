@@ -1,5 +1,7 @@
 ## smartFaceRecognistionAWS
 
+### Features and Implementations
+
 1. **Motion Detection Trigger**
    The IR sensor monitors for motion and triggers image capture when motion is detected.
 
