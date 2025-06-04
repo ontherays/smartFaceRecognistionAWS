@@ -6,21 +6,7 @@ URL: https://main.d5l0x3luaudb1.amplifyapp.com/
 
 # Smart Attendance System Dashboard Deployment Tutorial
 
-A comprehensive guide to deploy the web dashboard for the Smart Attendance System built with React and AWS Amplify.
-
-## 📋 Overview
-
-This tutorial covers deploying the **dashboard component only** of the Smart Attendance System. The dashboard provides a web interface for viewing attendance data, managing students, and monitoring system statistics.
-
-**Live Demo:** https://main.d5l0x3luaudb1.amplifyapp.com/
-
-## 🏗️ Architecture
-
-The dashboard connects to:
-- **AWS AppSync** - GraphQL API
-- **DynamoDB** - Data storage (FaceIndex and Attendance tables)
-- **AWS Amplify** - Hosting and CI/CD
-- **React** - Frontend framework
+A guide to deploy the web dashboard for the Smart Attendance System built with React and AWS Amplify.
 
 ## 📋 Prerequisites
 
