@@ -140,6 +140,38 @@ Tables can be:
 - **Created new** - Amplify generates fresh DynamoDB tables
 - **Imported existing** - Connect to existing DynamoDB tables
 
+## 📝 GraphQL Schema Configuration
+
+The heart of the Smart Attendance System's API is the GraphQL schema that defines the data structure and operations. This section explains the schema setup and customization.
+
+### Schema Overview
+
+The GraphQL schema is located at `amplify/backend/api/attendanceamplifyapp/schema.graphql` and defines two main data types that correspond to DynamoDB tables.
+
+### Schema Code
+
+```graphql
+# Schema for imported existing tables - NO automatic timestamps
+# This matches your actual DynamoDB table structure
+
+type FaceIndex @model @auth(rules: [{ allow: public }]) {
+  StudentID: String! @primaryKey
+  FaceID: String!
+  ImageID: String!  
+  Name: String!
+  # Note: No createdAt/updatedAt - these don't exist in imported tables
+}
+
+# Attendance table has composite primary key (StudentID + Date)
+type Attendance @model @auth(rules: [{ allow: public }]) {
+  StudentID: String! @primaryKey(sortKeyFields: ["Date"])
+  Date: String! 
+  Image: String
+  Name: String!
+  Time: String!
+  # Note: No createdAt/updatedAt - these don't exist in imported tables
+}
+
 ## 🌐 Deployment via AWS Amplify Console
 
 This section covers deploying the dashboard using the AWS Amplify Console web interface - ideal for users who prefer a GUI approach over CLI commands.
