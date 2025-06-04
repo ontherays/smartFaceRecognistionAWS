@@ -1,4 +1,4 @@
-# This is dashboard for our project
+# This is the dashboard for our project
 
 The dashboard is hosted on AWS Amplify.
 
