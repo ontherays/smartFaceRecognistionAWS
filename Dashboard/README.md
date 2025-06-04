@@ -92,10 +92,9 @@ src/
 │   ├── DiagnosticPanel.js # System diagnostics
 │   └── ConnectionTest.js # Connection testing
 ├── services/           # API services
-│   ├── api.js          # Main API functions
-│   └── enhancedApi.js  # Enhanced API with debugging
+│   └── api.js  # API functions
 ├── utils/              # Utility functions
-│   └── seedData.js     # Database seeding
+│   └── databaseStatus.js # Database status check
 ├── graphql/            # GraphQL queries and mutations
 └── aws-exports.js      # Amplify configuration (auto-generated)
 
@@ -171,6 +170,7 @@ type Attendance @model @auth(rules: [{ allow: public }]) {
   Time: String!
   # Note: No createdAt/updatedAt - these don't exist in imported tables
 }
+```
 
 ## 🌐 Deployment via AWS Amplify Console
 
