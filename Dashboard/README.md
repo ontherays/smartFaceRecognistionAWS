@@ -4,6 +4,15 @@ The dashboard is hosted on AWS Amplify.
 
 URL: https://main.d5l0x3luaudb1.amplifyapp.com/
 
+![image](https://github.com/user-attachments/assets/7366966f-a4df-4351-af98-0b8f767764f7)
+
+![image](https://github.com/user-attachments/assets/fe75e926-546a-4bf4-81c6-d94f2eeb7684)
+
+![image](https://github.com/user-attachments/assets/5cba6ad8-6121-48dd-a71a-ad1e16843ca2)
+
+![image](https://github.com/user-attachments/assets/b995441d-482e-476d-8d80-141d4794e5b2)
+
+
 # Smart Attendance System Dashboard Deployment Tutorial
 
 A guide to deploy the web dashboard for the Smart Attendance System built with React and AWS Amplify.
