@@ -87,7 +87,7 @@ A face recognition–based attendance system using Raspberry Pi 4, PiCamera, and
 
 ---
 
-### ✅ 8. **Edge Display / Feedback (Optional)**
+### ✅ 8. **Edge Display / Feedback**
 
 | **Test Case** | **Description**                                                         |
 | ------------- | ----------------------------------------------------------------------- |
