@@ -84,6 +84,8 @@ npm start
 
 ## 📁 Project Structure
 
+Your project structure should look more or less like this
+
 ```
 src/
 ├── components/          # React components
