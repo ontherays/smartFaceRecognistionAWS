@@ -42,10 +42,10 @@ Your AWS IAM user needs permissions for:
 
 ## 🚀 Quick Start
 
-### 1. Clone the Repository
+### 1. Copy the attendance-amplify-app or clone the original repository
 ```bash
-git clone <your-repo-url>
-cd smart-attendance-dashboard
+git clone https://github.com/19Jal/attendance-amplify-app
+cd attendance-amplify-app
 ```
 
 ### 2. Install Dependencies
