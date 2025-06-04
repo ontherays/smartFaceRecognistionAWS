@@ -21,7 +21,7 @@ Dashboard is the main menu of the attendance system. At the top, it shows total 
 A comprehensive guide to deploy the web dashboard for the Smart Attendance System built with React and AWS Amplify.
 
 ### Required Software
-- **Node.js** (v16 or later)
+- **React.js**
 - **npm** or **yarn**
 - **Git**
 - **AWS CLI** (v2)
