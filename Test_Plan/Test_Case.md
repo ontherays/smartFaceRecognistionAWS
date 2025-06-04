@@ -97,16 +97,31 @@ A face recognition–based attendance system using Raspberry Pi 4, PiCamera, and
 
 ---
 
+### ✅ 8. **Test Scenarios and Cases**
+
+| **Test Case ID** | **Scenario**                                     | **Steps**                                                                                               | **Expected Result**                                                                 |
+| ---------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| SNS-01           | Send test message to student topic               | - Use AWS CLI or console to publish message to `AttendanceNotificationTopic`                            | Student email should receive the test message                                       |
+| SNS-04           | Send test message to admin topic                 | - Use AWS CLI or console to publish message to `AdminAlertTopic`                                        | Admin email should receive the test message                                         |
+| SNS-05           | Verify notification after attendance marked      | - Simulate a motion detection and known face capture <br> - Check student email                         | Student should receive attendance confirmation with name, ID, timestamp             |
+| SNS-06           | Verify no duplicate notification for same day    | - Repeat recognition for same student on same date                                                      | SNS should **not** send another attendance notification                             |
+| SNS-07           | Verify notification after new registration       | - Capture unrecognized face <br> - Complete registration via terminal prompt                            | Both admin and student should receive SNS alerts with registration and attendance   |
+| SNS-08           | Simulate SNS failure (disable topic temporarily) | - Turn off topic subscription or use invalid ARN <br> - Trigger attendance                              | Code should fail gracefully with a printed error message                            |
+| SNS-09           | Confirm message formatting                       | - Review SNS email content                                                                              | Message should include name, ID, date, time, and relevant status info               |
+
+
+
 ## Integration Testing Matrix
 
-| Component       | IR Sensor | PiCamera | S3 Upload | Lambda | Rekognition | DynamoDB |
-| --------------- | --------- | -------- | --------- | ------ | ----------- | -------- |
-| IR Sensor       | ✅         | ✅        | –         | –      | –           | –        |
-| PiCamera        | –         | ✅        | ✅         | –      | –           | –        |
-| S3 Upload       | –         | –        | ✅         | ✅      | ✅           | –        |
-| Lambda Function | –         | –        | –         | ✅      | ✅           | ✅        |
-| Rekognition     | –         | –        | –         | –      | ✅           | ✅        |
-| DynamoDB        | –         | –        | –         | –      | –           | ✅        |
+| Component       | IR Sensor | PiCamera | S3 Upload | Lambda | Rekognition | DynamoDB | IAM Policy|
+| --------------- | --------- | -------- | --------- | ------ | ----------- | -------- | -------- |
+| IR Sensor       | ✅         | ✅        | –         | –      | –           | –        | –        |
+| PiCamera        | –         | ✅        | ✅         | –      | –           | –        | –        |
+| S3 Upload       | –         | –        | ✅         | ✅      | ✅           | –        |  ✅    |
+| Lambda Function | –         | –        | –         | ✅      | ✅           | ✅        | ✅      |
+| Rekognition     | –         | –        | –         | –      | ✅           | ✅        | ✅      |
+| DynamoDB        | –         | –        | –         | –      | –           | ✅        |  ✅      |
+| SNS             | –         | –        | –         | –      | –           | ✅        |   ✅     |
 
 ---
 
