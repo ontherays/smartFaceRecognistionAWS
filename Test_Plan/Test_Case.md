@@ -1,4 +1,4 @@
-## **Test Plan and Matrix: Smart Auto Attendance System**
+## **Test Plan and Matrix: Smart Attendance System**
 
 **Project Overview**
 A face recognition–based attendance system using Raspberry Pi 4, PiCamera, and IR sensor integrated with AWS Rekognition, Lambda, S3, and DynamoDB. The system captures images on motion detection, uploads them to S3, and identifies individuals for attendance logging.
