@@ -91,8 +91,7 @@ src/
 │   ├── DiagnosticPanel.js # System diagnostics
 │   └── ConnectionTest.js # Connection testing
 ├── services/           # API services
-│   ├── api.js          # Main API functions
-│   └── enhancedApi.js  # Enhanced API with debugging
+│   └── api.js          # API functions
 ├── utils/              # Utility functions
 │   └── seedData.js     # Database seeding
 ├── graphql/            # GraphQL queries and mutations
