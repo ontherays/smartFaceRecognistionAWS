@@ -47,7 +47,7 @@ Dashboard: [main.d5l0x3luaudb1.amplifyapp.com](https://main.d5l0x3luaudb1.amplif
 
 ## 📊 Work FLow
 
-![image](https://github.com/user-attachments/assets/a74210c4-3836-4a03-9c78-e2ae8cfedc5a)
+![recognition Diagram3 drawio](https://github.com/user-attachments/assets/88eb439d-5631-48b0-9add-5bc728df4794)
 
 ## Workflow OverviewRaspberry Pi captures an image when someone arrives.
 
