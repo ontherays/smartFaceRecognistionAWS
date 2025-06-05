@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Registration</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    label, input { display: block; margin: 10px 0; }
+    button { padding: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Student Face Registration</h2>
+  <form id="registerForm">
+    <label>Full Name:</label>
+    <input type="text" id="name" required />
+    
+    <label>Student ID:</label>
+    <input type="text" id="studentId" required />
+    
+    <button type="submit">Register</button>
+  </form>
+
+  <p id="status"></p>
+
+  <script>
+    const form = document.getElementById('registerForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const studentId = document.getElementById('studentId').value;
+
+      const response = await fetch('/register', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ name, studentId })
+      });
+
+      const result = await response.json();
+      document.getElementById('status').innerText = result.message;
+    });
+  </script>
+</body>
+</html>
