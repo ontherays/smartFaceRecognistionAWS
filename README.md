@@ -47,10 +47,10 @@ To eliminate manual attendance processes and improve record accuracy by deployin
 * AWS S3: Storage for face images (registered and attendance)
 * AWS Rekognition: Face indexing and matching
 * AWS DynamoDB: Metadata and attendance logging
-* AWS Lambda (optional): Serverless logic for triggered operations
+* AWS Lambda : Serverless logic for triggered operations
 * AWS IAM: Role and policy management for secured service access
 * AWS SNS: Notification to admin and students
-* Flask or Node.js backend API
+* Node.js backend API (dashboard)
 * React.js frontend (dashboard)
 * Flask: Web-based registration UI hosted locally
 * Python (boto3, Flask, Picamera2, etc.)
